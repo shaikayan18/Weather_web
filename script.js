@@ -12,7 +12,10 @@ form.addEventListener('submit',searchForLocation)
 let target="tumakuru"
 
  const fetchResults =async(targetlocation)=>{
-    let url=`https://api.weatherapi.com/v1/current.json?key=fa20528f7b71404d8a3154152252312&q=${targetlocation}&aqi=no`
+    let url = "https://api.weatherapi.com/v1/current.json"
+        + "?key=fa20528f7b71404d8a3154152252312"
+        + "&q=" + encodeURIComponent(targetlocation)
+        + "&aqi=no";
     const res =await fetch(url)
     const data=await res.json()
     
@@ -66,4 +69,5 @@ function searchForLocation(e){
             return "Saturday";
     }
  }
+
 
