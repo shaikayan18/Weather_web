@@ -3,7 +3,7 @@
 const temperatureField = document.querySelector(".temp p");
 const locationField = document.querySelector(".time_location h1");
 const dateandtimefield = document.querySelector(".time_location p ");
-const conditionfield=document.querySelector(".condition h6");
+const conditionfield=document.querySelector(".condition h4");
 const searchField=document.querySelector(".search_area"); 
 const form =document.querySelector('form')
 
@@ -69,5 +69,6 @@ function searchForLocation(e){
             return "Saturday";
     }
  }
+
 
 
